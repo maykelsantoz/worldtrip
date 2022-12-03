@@ -1,0 +1,56 @@
+:root {
+  --light-white: #ffffff;
+  --light-heading: #f5f8fa;
+  --light-info: #dadada;
+
+  --dark-black: #000000;
+  --dark-heading: #47585b;
+  --dark-info: #999999;
+  --dark-info-50: rgba(153, 153, 153, 0.5);
+
+  --highlight: #ffba08;
+  --highlight-50: rgba(255, 186, 8, 0.5);
+  --swiper-theme-color: #ffba08;
+}
+
+.swiper-button-prev {
+  left: 45px;
+}
+
+.swiper-button-next {
+  right: 45px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--dark-info);
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+  
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--highlight);
+  width: 16px;
+  height: 16px;
+}
+
+@media(max-width:30em) {
+  .swiper-button-prev {
+    left: 45px;
+  }
+  
+  .swiper-button-next {
+    right: 45px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+  }
+}
