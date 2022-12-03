@@ -30,18 +30,18 @@ export default function Carrousel() {
             align="center"
             justify="center"
             direction="column"
-            bgImage="url('/europe.jpg')"
+            bgImage="url('/riodejaneiro.jpg')"
             bgRepeat="no-repeat"
             bgSize="cover"
             textAlign="center"
             bgPosition="center"
           >
-            <Link href="/continent/europe">
+            <Link href="/continent/america">
               <Heading color="gray.100" fontWeight="700" fontSize={["3xl", "4xl", "5xl"]}>
-                Europa
+                América
               </Heading>
               <Text color="gray.300" fontWeight="700" mt="4" fontSize={["0.875rem", "1xl", "2xl"]} >
-                O continente mais antigo.
+                O continente mais novo.
               </Text>
             </Link>
           </Flex>
@@ -59,9 +59,9 @@ export default function Carrousel() {
             textAlign="center"
             bgPosition="center"
           >
-            <Link href="/continent/sulamerica">
+            <Link href="/continent/europe">
               <Heading color="gray.100" fontWeight="700" fontSize={["3xl", "4xl", "5xl"]}>
-                Brasil
+                Europa
               </Heading>
               <Text color="gray.300" fontWeight="700" mt="4" fontSize={["0.875rem", "1xl", "2xl"]} >
                 O continente mais antigo.

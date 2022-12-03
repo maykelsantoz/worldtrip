@@ -6,7 +6,7 @@ interface MenuProps {
   title: string;
 }
 
-export default function Menu({ description, title }: MenuProps) {
+export default function Menu() {
   return (
     <Flex align="center" justify="space-between">
       <Flex direction={["column"]} align={["flex-start", "flex-start", "center"]} justify="center">

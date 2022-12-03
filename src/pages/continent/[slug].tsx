@@ -18,7 +18,6 @@ export default function Continent() {
         <Infotravel />
         <Cities />
       </Flex>
-
     </Flex>
   )
 }

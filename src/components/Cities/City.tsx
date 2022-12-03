@@ -17,24 +17,23 @@ interface Country {
   flag: string;
 }
 
-export default function City({ city, country, photoCity, flag }: CountryProps) {
+export default function City() {
   const [countries, setCountries] = useState<Country[]>([]);
 
-  // useEffect(() => {
-  //   api.get(`/countries/`).then(response => {
-  //     setCountries(response.data)
-  //   });
-
-  // }, []);
-
   useEffect(() => {
-    async function loadCountries() {
-      const response = await api.get('/countries');
-      setCountries(response.data);
-      // console.log(response.data)
-    }
-    loadCountries();
+    api.get(`/countries/`).then(response => {
+      setCountries(response.data)
+    });
   }, []);
+
+  // useEffect(() => {
+  //   async function loadCountries() {
+  //     const response = await api.get('/countries');
+  //     setCountries(response.data);
+  //     // console.log(response.data)
+  //   }
+  //   loadCountries();
+  // }, []);
 
   return (
     <>
